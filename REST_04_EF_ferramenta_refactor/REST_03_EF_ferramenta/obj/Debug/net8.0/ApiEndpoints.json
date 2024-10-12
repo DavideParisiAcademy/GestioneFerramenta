@@ -1,0 +1,252 @@
+[
+  {
+    "ContainingType": "REST_03_EF_ferramenta.Controllers.ProdottoController",
+    "Method": "InserisciReparto",
+    "RelativePath": "api/prodotto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDto",
+        "Type": "REST_03_EF_ferramenta.Models.ProdottoInsertDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_03_EF_ferramenta.Controllers.ProdottoController",
+    "Method": "UpdateProdotto",
+    "RelativePath": "api/prodotto/{varID}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDto",
+        "Type": "REST_03_EF_ferramenta.Models.ProdottoInsertDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "varID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "REST_03_EF_ferramenta.Controllers.ProdottoController",
+    "Method": "EliminaById",
+    "RelativePath": "api/prodotto/elimina-by-id/{varID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "REST_03_EF_ferramenta.Controllers.ProdottoController",
+    "Method": "CercaProdottiByReparto",
+    "RelativePath": "api/prodotto/prodotto-by-reparto/{varID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[REST_03_EF_ferramenta.Models.ProdottoDTO, REST_03_EF_ferramenta, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "REST_03_EF_ferramenta.Controllers.ProdottoController",
+    "Method": "Cerca",
+    "RelativePath": "api/prodotto/prodotto/{varCodice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "REST_03_EF_ferramenta.Models.ProdottoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "REST_03_EF_ferramenta.Controllers.RepartoController",
+    "Method": "InserisciReparto",
+    "RelativePath": "api/reparto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDto",
+        "Type": "REST_03_EF_ferramenta.Models.RepartoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "REST_03_EF_ferramenta.Controllers.RepartoController",
+    "Method": "CercaReparto",
+    "RelativePath": "api/reparto/{varCodice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varCodice",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "REST_03_EF_ferramenta.Models.RepartoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "REST_03_EF_ferramenta.Controllers.RepartoController",
+    "Method": "UpdateReparto",
+    "RelativePath": "api/reparto/{varID}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objDto",
+        "Type": "REST_03_EF_ferramenta.Models.RepartoUpdateDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "varID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "REST_03_EF_ferramenta.Controllers.RepartoController",
+    "Method": "EliminaById",
+    "RelativePath": "api/reparto/elimina-by-id/{varID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "REST_03_EF_ferramenta.Controllers.RepartoController",
+    "Method": "cercaRepartoById",
+    "RelativePath": "api/reparto/reparto-by-id/{varID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "varID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "REST_03_EF_ferramenta.Models.RepartoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
